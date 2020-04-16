@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: moviesservice
-        image: us.icr.io/ibmperumf/moviesapiimg:v1.0.0
+        image: us.icr.io/ibmperumf2/moviesapiimg
         ports:
         - containerPort: 80        
 ---
@@ -32,6 +32,6 @@ spec:
    - name: client
      protocol: TCP
      port: 80
-     nodePort: 32084
+     nodePort: 32081
  selector:
    app: moviesapi
